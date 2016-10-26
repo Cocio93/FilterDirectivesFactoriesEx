@@ -1,0 +1,16 @@
+<html ng-app="myApp" ng-controller="MyController as ctrl">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5//angular.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body >
+        <h3>Children of school age (6-15 years old)</h3>
+        <div ng-repeat="person in ctrl.persons | schoolAge">
+            Name: {{person.name}}  Age: {{person.age}}
+        </div>
+    </body>
+</html>
