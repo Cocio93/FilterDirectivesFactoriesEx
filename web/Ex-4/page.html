@@ -14,6 +14,22 @@ and open the template in the editor.
         <script src="script.js"></script>
     </head>
     <body>
-        <div>Country: {{asia}}</div>
+        <div class="row">
+            <div class="col-md-1"> </div>
+            <div class="col-md-3">
+                <h3>Countries in Europe</h3>
+                <p ng-repeat="country in europe">Name: {{country.name}}</p>
+            </div>
+            <div class="col-md-1"> </div>
+            <div class="col-md-3">
+                <h3>Countries in Africa</h3>
+                <p ng-repeat="country in africa">Name: {{country.name}}</p>
+            </div>
+            <div class="col-md-1"> </div>
+            <div class="col-md-3">
+                <h3>Countries in Asia</h3>
+                <p ng-repeat="country in asia">Name: {{country.name}}</p>
+            </div>
+        </div> 
     </body>
 </html>

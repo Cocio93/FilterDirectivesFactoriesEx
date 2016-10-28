@@ -1,5 +1,4 @@
 var app = angular.module("myApp", []);
-
 app.controller('MyController', [function(){
 var self = this;
 self.persons = [
